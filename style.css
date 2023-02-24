@@ -3,16 +3,22 @@ body {
     margin: 0;
     font-family: verdana;
     text-align: center;
+    background-color: black;
+    color: aqua;
 }
 
+/* Stopwatch values and controls */
 #timer{
     margin-top: 15vh;
 }
 
+/* Stopwatch Values */
 .time{
     font-size: 5rem;
 }
 
+/* Stopwatch Controls */
 .buttons{
     font-size: 2rem;
+    color: aqua;
 }

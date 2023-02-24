@@ -1,29 +1,31 @@
-let startBtn = document.getElementById('start');
-let stopBtn = document.getElementById('stop');
-let resetBtn = document.getElementById('reset');
+let startButton = document.getElementById('start');
+let stopButton = document.getElementById('stop');
+let resetButton = document.getElementById('reset');
   
 let hour = 00;
 let minute = 00;
 let second = 00;
 let millisecond = 00;
   
-startBtn.addEventListener('click', function () {
+// Start Button
+startButton.addEventListener('click', function () {
     timer = true;
     stopWatch();
 });
   
-stopBtn.addEventListener('click', function () {
+// Stop Button
+stopButton.addEventListener('click', function () {
     timer = false;
 });
   
-resetBtn.addEventListener('click', function () {
-    let result = ""
-    if(hour != 00)result+hour+" hours "
-    if(minute != 00)result+minute+" minutes "
-    if(second != 00)result+second+" seconds "
-    if(millisecond != 00)result+millisecond+" milliseconds "
-    alert("Stopped at "+result);
-    console.log(result)
+// Reset Button
+resetButton.addEventListener('click', function () {
+    let result = "";
+    if(hour != 00) result = result + hour + " hours ";
+    if(minute != 00) result = result + minute + " minutes ";
+    if(second != 00) result = result + second + " seconds ";
+    if(millisecond != 00) result = result + millisecond + " milliseconds ";
+    alert("Stopped at "+ result); /* Display the value when stopwatch stopped */
     timer = false;
     hour = 0;
     minute = 0;

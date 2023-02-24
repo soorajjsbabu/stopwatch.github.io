@@ -6,24 +6,28 @@
     </head>
     <body>
         <h1 class="mt-5">Stopwatch</h1>
-            <div id="timer">
-                <span class="time" id="hour">
-                00</span>
-                <span class="time">:</span>
-                <span class="time" id="minute">
-                00</span>
-                <span class="time">:</span>
-                <span class="time" id="second">
-                00</span>
-                <span class="time">:</span>
-                <span class="time" id="millisecond">
-                00</span>
-            </div>
-            <div id="controls" class="mt-5">
-                <i class="fa-solid fa-play btn buttons" id="start"></i>
-                <i class="fa-solid fa-pause btn buttons" id="stop"></i>
-                <i class="fa-solid fa-stop btn buttons" id="reset"></i>
-            </div>
+        
+        <!-- Values for hours, minutes, seconds and milliseconds -->
+        <div id="timer">
+            <span class="time" id="hour">
+            00</span>
+            <span class="time">:</span>
+            <span class="time" id="minute">
+            00</span>
+            <span class="time">:</span>
+            <span class="time" id="second">
+            00</span>
+            <span class="time">:</span>
+            <span class="time" id="millisecond">
+            00</span>
+        </div>
+        
+        <!-- Controls for stopwatch - Start, Stop, Reset -->
+        <div id="controls" class="mt-5">
+            <i class="fa-solid fa-play btn buttons" id="start"></i>
+            <i class="fa-solid fa-pause btn buttons" id="stop"></i>
+            <i class="fa-solid fa-stop btn buttons" id="reset"></i>
+        </div>
 
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
