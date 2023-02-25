@@ -21,4 +21,11 @@ body {
 .buttons{
     font-size: 2rem;
     color: aqua;
+    border: 1px solid aqua;
+}
+
+#controls{
+    align-items: center;
+    width: 20vw;
+    margin: auto;
 }
